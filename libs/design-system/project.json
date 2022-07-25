@@ -1,0 +1,25 @@
+{
+  "projectType": "library",
+  "sourceRoot": "libs/design-system/src",
+  "prefix": "learn",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/design-system"],
+      "options": {
+        "jestConfig": "libs/design-system/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/design-system/**/*.ts",
+          "libs/design-system/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}
