@@ -1,7 +1,7 @@
 {
   "projectType": "library",
   "sourceRoot": "libs/design-system/src",
-  "prefix": "learn",
+  "prefix": "dev",
   "targets": {
     "test": {
       "executor": "@nrwl/jest:jest",

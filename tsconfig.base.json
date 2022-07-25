@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@learn/design-system": ["libs/design-system/src/index.ts"]
+      "@dev/design-system": ["libs/design-system/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
