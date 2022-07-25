@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/story-book",
         "index": "apps/story-book/src/index.html",
@@ -17,7 +19,10 @@
           "apps/story-book/src/favicon.ico",
           "apps/story-book/src/assets"
         ],
-        "styles": ["apps/story-book/src/styles.scss"],
+        "styles": [
+          "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/story-book/src/styles.scss"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -82,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/story-book"],
+      "outputs": [
+        "coverage/apps/story-book"
+      ],
       "options": {
         "jestConfig": "apps/story-book/jest.config.ts",
         "passWithNoTests": true
